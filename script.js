@@ -44,6 +44,7 @@
 
 ////////////////////////////////////////////////////Teacher/////////////////////////////////////////////////////
 
+
 // function tempConverter(deg, from, to) {
 //     if (from == 'C') {
 //         if (to == 'F') {
@@ -83,15 +84,78 @@
 // console.log(isSquare(25));
 // console.log(isSquare(36));
 
-function isSquare(a) {
-    if (Math.sqrt(a) == parseInt(Math.sqrt(a))) {
-        return true;
-    } else {
-        return false;
-    }
 
+// function isSquare(a) {
+// //     if (Math.sqrt(a) == parseInt(Math.sqrt(a))) {
+// //         return true;
+// //     } else {
+// //         return false;
+// //     }
+// //
+// // }
+// //
+// // console.log(isSquare(5));
+// // console.log(isSquare(25));
+// // console.log(isSquare(36));
+
+
+// function string() {
+//     let string = 'Lorem ipsum dolor sit amet';
+//     let splits = string.split(" ");
+//     let result = "";
+//
+//     for (let i = 0; i < splits.length; i++) {
+//         let name = splits[i];
+//         let first = name.substring(0, 1).toUpperCase();
+//         let Leftovers = name.substring(1, name.length);
+//         result += first + Leftovers + " ";
+//     }
+//
+//     console.log(result)
+// }
+//
+// string();
+
+
+// function mayCapitalize(string) {
+//     let str = 'lorem ipsum dolor sit amet';
+//     for (let i = 0; i < str.length; i++) {
+//
+//     }
+//     console.log(aaa);
+//     return str;
+// }
+//
+// console.log(mayCapitalize());
+
+
+// let testString = 'lorem ipsum dolor sit amet';
+
+// console.log(testString.length);
+
+// console.log(testString.charAt(1));
+
+// console.log(testString.toUpperCase());
+
+// console.log(testString.substring(3, 8));
+
+// console.log(testString.substr(3, 6));
+
+// console.log(testString.substring(3, -3));
+
+// console.log(testString.slice(3, -3));
+
+// console.log(testString.slice(0, 2) + 'Q' + testString.slice(3));
+
+
+function makeCapitalize(str) {
+    debugger;
+    for (let i = 0; i < str.length; i++) {
+        if (str.charAt(i) == ' ') {
+            str = str.slice(0, i + 1) + str.charAt(i + 1).toUpperCase() + str.slice(i + 2);
+        }
+    }
+    return str
 }
 
-console.log(isSquare(5));
-console.log(isSquare(25));
-console.log(isSquare(36));
+makeCapitalize('Lorem ipsum dolor sit amet');
