@@ -150,6 +150,8 @@
 
 function makeCapitalize(str) {
     debugger;
+
+
     for (let i = 0; i < str.length; i++) {
         if (str.charAt(i) == ' ') {
             str = str.slice(0, i + 1) + str.charAt(i + 1).toUpperCase() + str.slice(i + 2);
